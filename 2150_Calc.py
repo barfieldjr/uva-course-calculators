@@ -3,9 +3,9 @@
 # 30% Midterm Exams (2)
 # 25% Final
 
-lab_avg = 0
-midterm_avg = 0
-final_avg = 0
+lab_avg = int(input("Please enter your lab average: "))
+midterm_avg = int(input("Please enter your midterm average: "))
+final_avg = int(input("Please enter you final exam grade: "))
 
 def final_grade(lab, midterm, final) : 
     return((lab*.45)+(midterm*.30)+(final*.25))
