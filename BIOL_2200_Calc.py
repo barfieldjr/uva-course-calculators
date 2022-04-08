@@ -1,4 +1,4 @@
-# Biology Spring 2022 UVA
+# BIOL 2200 Spring 2022 UVA
 # 70% Exams
 # 20% Lab
 # 10% Mastering Biology
