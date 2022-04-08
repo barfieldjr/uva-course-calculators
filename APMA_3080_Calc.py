@@ -4,7 +4,7 @@
 # 20% Labs and Projects 
 # 10% In-class activites
 # 5% Webwork
-# 5% Other
+# 5% Other (Not defined so just added in calculation)
 
 final_avg = int(input("Please enter your final exam grade: "))
 midterm_avg = int(input("Please enter your midterm average: "))
@@ -13,7 +13,7 @@ in_class = int(input("Please enter your in-class activites average: "))
 webwork = int(input("Please enter your webwork average: "))
 
 
-def final_grade(lab, midterm, final) : 
-    return((lab*.45)+(midterm*.30)+(final*.25))
+def final_grade(final, midterm, labs, ica, webwork) : 
+    return((final*.30)+(midterm*.30)+(labs*.20)+(ica*.1)+(webwork*.05)+.05)
 
-print(final_grade(lab_avg, midterm_avg, final_avg))
+print(final_grade(final_avg, midterm_avg, labs_avg, in_class, webwork))
