@@ -2,8 +2,8 @@
 # 50% Quizzes
 # 50% Problem Sets
 
-quiz_avg = int(input("Please enter your quiz average: "))
-pset_avg = int(input("Please enter your problem set average: "))
+quiz_avg = float(input("Please enter your quiz average: "))
+pset_avg = float(input("Please enter your problem set average: "))
 
 def final_grade(quiz, pset) : 
     return((quiz*.5)+(pset*.50))

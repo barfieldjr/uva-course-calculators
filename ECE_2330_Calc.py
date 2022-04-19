@@ -5,11 +5,11 @@
 # 15% Final exam
 # 10% Zybook participation activities
 
-test_avg = int(input("Please enter your test average: "))
-proj_avg = int(input("Please enter your project average: "))
-chal_avg = int(input("Please enter your Zybook challenge activities average: "))
-part_avg = int(input("Please enter your Zybook participation activities average: "))
-finl_avg = int(input("Please enter your final exam grade: "))
+test_avg = float(input("Please enter your test average: "))
+proj_avg = float(input("Please enter your project average: "))
+chal_avg = float(input("Please enter your Zybook challenge activities average: "))
+part_avg = float(input("Please enter your Zybook participation activities average: "))
+finl_avg = float(input("Please enter your final exam grade: "))
 
 def final_grade(test, proj, chal, part, finl) : 
     return((test*.3)+(proj*.25)+(chal*.2)+(part*.1)+(finl*.15))

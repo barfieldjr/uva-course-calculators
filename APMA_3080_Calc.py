@@ -6,11 +6,11 @@
 # 5% Webwork
 # 5% Other (Not defined so just added in calculation)
 
-final_avg = int(input("Please enter your final exam grade: "))
-midterm_avg = int(input("Please enter your midterm average: "))
-labs_avg = int(input("Please enter you labs and projects average: "))
-in_class = int(input("Please enter your in-class activites average: "))
-webwork = int(input("Please enter your webwork average: "))
+final_avg = float(input("Please enter your final exam grade: "))
+midterm_avg = float(input("Please enter your midterm average: "))
+labs_avg = float(input("Please enter you labs and projects average: "))
+in_class = float(input("Please enter your in-class activites average: "))
+webwork = float(input("Please enter your webwork average: "))
 
 
 def final_grade(final, midterm, labs, ica, webwork) : 
