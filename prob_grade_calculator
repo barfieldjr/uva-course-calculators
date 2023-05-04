@@ -1,0 +1,50 @@
+# Based off Hui Mai 2023 Spring APMA 3100 Course Grading Schema
+
+# Complete the 2 TODO's and run the script!
+
+# Groupwork -> 12%
+# WebWork -> 12%
+# Projects -> 20%
+# Midterms -> 36%
+# Final Exam -> 20%
+
+def prob_grade(groupwork: float, webwork: float, projects: float, midterms: float, final: float):
+    return groupwork*.12+webwork*.12+projects*.2+ midterms*.36+ final*.2
+
+def needed_to_pass(groupwork: float, webwork: float, projects: float, midterms: float):
+    # Calculating your grade without the final exam...
+    
+    grade = groupwork*.12+webwork*.12+projects*.2+ midterms*.36
+
+    # Returning what you need to pass the course!
+    if grade >= 65:
+        print("You don't even need to take the final to pass, \nif you recieve a 0 on the final exam your grade will be: ", round(grade,2),'.')
+    elif grade >= 59.5:
+        print("Technically you dont need to take the final, but you pushing it a lil, \nif you take a 0 on the final exam your grade will be: ", round(grade,2),'.')
+    elif grade >= 40:
+        print('You gone need a ', round(((60 - grade)/20)*100,2), ' on your final exam to pass the class.')
+    else:
+        print( "Yeah ngl you hit my boy, even with a 100 on the final you aint passing, \nwith a 100 on the final exam, your final grade would be ", round(grade +20,2), " you better hope for a curve and pray to Hui Mai!")
+
+# TODO #1 Insert your current scores
+
+groupwork = None
+webwork = None
+projects = None
+midterms = None
+
+# TODO #2 Enter a possible final exam score (don't cap).
+
+what_if_final_exam_grade = None
+
+# NEEDED-TO-PASS calculations
+# This prints out what you need to pass the course with a D- (60).
+# For e-school CS all you need is a D-, yay!
+
+needed_to_pass(groupwork, webwork, projects,midterms)
+print('-' * 80)
+
+# WHAT-IF calculations
+# Returns what your final grade will be based off of theoretical final exam score 
+
+print('Assuming you get a final exam score of ', what_if_final_exam_grade , ', your final grade will be ', prob_grade(groupwork, webwork, projects,midterms, what_if_final_exam_grade))
